@@ -11,6 +11,7 @@ html
     script(src="/js/lib/mask.js")
     script(src="/js/lib/owl.carousel.min.js")
     script(src="/js/lib/TweenMax.min.js")
+    script(src="/js/lib/moment.js")
     script(src="/js/main.js")
     //endbuild
 
@@ -137,38 +138,40 @@ html
           .col-sm-12
             .heading.heading--small До следующего этапа осталось:
 
-            .counter__nums
+            // можно задать дату на .counter__nums (отчет до)
+            // или вручную вписать значения через init-value и поменять this.values в .js 
+            .counter__nums(data-month=01 data-day=21 data-hour=12 data-minute=05)
               .bloc-time.days(data-init-value='46')
                 .figure.days.days-1
-                  span.top 5
+                  span.top 0
                   span.top-back
-                    span 4
-                  span.bottom 4
+                    span 0
+                  span.bottom 0
                   span.bottom-back
-                    span 4
+                    span 0
                 .figure.days.days-2
-                  span.top 6
+                  span.top 0
                   span.top-back
-                    span 6
-                  span.bottom 6
+                    span 0
+                  span.bottom 0
                   span.bottom-back
-                    span 6
+                    span 0
                 span.count-title Дней
               .bloc-time.hours(data-init-value='0')
                 .figure.hours.hours-1
-                  span.top 2
+                  span.top 0
                   span.top-back
-                    span 2
-                  span.bottom 2
+                    span 0
+                  span.bottom 0
                   span.bottom-back
-                    span 2
+                    span 0
                 .figure.hours.hours-2
-                  span.top 4
+                  span.top 0
                   span.top-back
-                    span 4
-                  span.bottom 4
+                    span 0
+                  span.bottom 0
                   span.bottom-back
-                    span 4
+                    span 0
                 span.count-title Часов
               .bloc-time.min(data-init-value='0')
                 .figure.min.min-1

@@ -161,13 +161,30 @@ $(document).ready(function(){
       	seconds: this.$el.find('.bloc-time.sec .figure')
      	};
 
+      var countMonth = this.$el.data('month');
+      var countDay = this.$el.data('day');
+      var countHour = this.$el.data('hour');
+      var countMin = this.$el.data('minute');
+
+      var currentDate = new Date();
+
+      var a = moment([2017, countMonth, countDay, countHour, countMin]);
+      var b = moment([2017, currentDate.getMonth() + 1, currentDate.getDate(), currentDate.getHours(), currentDate.getMinutes(), currentDate.getSeconds()]);
+
       // Init countdown values
       this.values = {
-          days  : this.$.days.parent().attr('data-init-value'),
-  	      hours  : this.$.hours.parent().attr('data-init-value'),
-          minutes: this.$.minutes.parent().attr('data-init-value'),
-          seconds: this.$.seconds.parent().attr('data-init-value'),
+          days  : a.diff(b, 'days'),
+          hours  : a.diff(b, 'hours') - (a.diff(b, 'days') * 24),
+          minutes: Math.abs(a.diff(b, 'minutes') - (a.diff(b, 'hours') * 60) - (a.diff(b, 'days') * 24)),
+          seconds: 30,
       };
+
+      // this.values = {
+      //     days  : this.$.days.parent().attr('data-init-value'),
+  	  //     hours  : this.$.hours.parent().attr('data-init-value'),
+      //     minutes: this.$.minutes.parent().attr('data-init-value'),
+      //     seconds: this.$.seconds.parent().attr('data-init-value'),
+      // };
 
       // Initialize total seconds
       this.total_seconds = this.values.days * 60 * 60 * 60 + this.values.hours * 60 * 60 + (this.values.minutes * 60) + this.values.seconds;
