@@ -62,7 +62,7 @@ $(document).ready(function(){
         0:{
             items: 1
         },
-        500:{
+        430:{
             items: 2
         },
         992:{
@@ -85,7 +85,7 @@ $(document).ready(function(){
       0:{
           items: 1
       },
-      500:{
+      430:{
           items: 2
       },
       992:{
