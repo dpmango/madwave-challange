@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- MADE WITH LOVE BY <> SERGEY KHMELEVSKOY </>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Site name</title>
+    <script src="js/main.min.js"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+<![endif]-->
+  </head>
+  <body>
+    <!-- HEADER-->
+    <header class="header">
+      <div class="container">
+        <div class="row hidden-xs-down">
+          <div class="col-sm-3"><a href="#"><i class="ico ico-logo"></i></a></div>
+          <div class="col-sm-7">
+            <ul class="header__navi">
+              <li><a href="#">Онлайн-Магазин</a></li>
+              <li><a href="#">Сайт соревнований</a></li>
+              <li><a href="#">Стать участником</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-2 text-sm-right">
+            <div class="header__socials"><a href="#"><i class="ico ico-mail"></i></a><a href="#"><i class="ico ico-insta"></i></a><a href="#"><i class="ico ico-vk"></i></a></div>
+          </div>
+        </div>
+        <div class="row hidden-sm-up">
+          <div class="col-xs-6"><a href="#"><i class="ico ico-logo"></i></a></div>
+          <div class="col-xs-3 text-xs-center">
+            <div class="header__socials"><a href="#"><i class="ico ico-mail"></i></a><a href="#"><i class="ico ico-insta"></i></a><a href="#"><i class="ico ico-vk"></i></a></div>
+          </div>
+          <div class="col-xs-3 text-xs-right">
+            <button class="hamburger hamburger--elastic" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="mobile-nav">
+              <ul class="mobile-nav-list">
+                <li><a href="#">Онлайн-Магазин</a></li>
+                <li><a href="#">Сайт соревнований</a></li>
+                <li><a href="#">Стать участником</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--HERO-->
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-xs-center"><i class="ico ico-challange"></i>
+            <div class="hero__title">Mad Wave Challenge</div>
+            <div class="hero__desc">Международные всероссийские соревнования <br> и Турнир по плаванию для юниоров от 10 до 14 лет</div><a class="btn-cta" href="#">Стать участником</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- EVENTS-->
+    <section class="events">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="heading">Турнир 2016-2017</div>
+            <div class="subheading">Этапы</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="events__item events__item--compleated"><i class="ico events__item__status"></i>
+              <div class="events__item__image"><img src="images/events-1.png"></div>
+              <div class="events__item__name">Брест</div>
+              <div class="events__item__date">5-6 ноября 2016</div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="events__item"><i class="ico events__item__status"></i>
+              <div class="events__item__image"><img src="images/events-2.png"></div>
+              <div class="events__item__name">Санкт-Петербург</div>
+              <div class="events__item__date">21-22 января 2017</div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="events__item"><i class="ico events__item__status"></i>
+              <div class="events__item__image"><img src="images/events-3.png"></div>
+              <div class="events__item__name">Руза</div>
+              <div class="events__item__date">11-12 марта 2017</div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="events__item"><i class="ico events__item__status"></i>
+              <div class="events__item__image"><img src="images/events-4.png"></div>
+              <div class="events__item__name">Казань</div>
+              <div class="events__item__date">7-9 мая 2017</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--section-->
+    <section class="counter">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="heading heading--small">До следующего этапа осталось:</div>
+            <div class="counter__nums">
+              <div class="bloc-time days" data-init-value="46">
+                <div class="figure days days-1"><span class="top">5</span><span class="top-back"><span>4</span></span><span class="bottom">4</span><span class="bottom-back"><span>4</span></span></div>
+                <div class="figure days days-2"><span class="top">6</span><span class="top-back"><span>6</span></span><span class="bottom">6</span><span class="bottom-back"><span>6</span></span></div><span class="count-title">Дней</span>
+              </div>
+              <div class="bloc-time hours" data-init-value="0">
+                <div class="figure hours hours-1"><span class="top">2</span><span class="top-back"><span>2</span></span><span class="bottom">2</span><span class="bottom-back"><span>2</span></span></div>
+                <div class="figure hours hours-2"><span class="top">4</span><span class="top-back"><span>4</span></span><span class="bottom">4</span><span class="bottom-back"><span>4</span></span></div><span class="count-title">Часов</span>
+              </div>
+              <div class="bloc-time min" data-init-value="0">
+                <div class="figure min min-1"><span class="top">0</span><span class="top-back"><span>0</span></span><span class="bottom">0</span><span class="bottom-back"><span>0</span></span></div>
+                <div class="figure min min-2"><span class="top">0</span><span class="top-back"><span>0</span></span><span class="bottom">0</span><span class="bottom-back"><span>0</span></span></div><span class="count-title">Минут</span>
+              </div>
+              <div class="bloc-time sec" data-init-value="20">
+                <div class="figure sec sec-1"><span class="top">0</span><span class="top-back"><span>0</span></span><span class="bottom">0</span><span class="bottom-back"><span>0</span></span></div>
+                <div class="figure sec sec-2"><span class="top">0</span><span class="top-back"><span>0</span></span><span class="bottom">0</span><span class="bottom-back"><span>0</span></span></div><span class="count-title">Секунд</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About-->
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="heading">О соревнованиях</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-8 col-lg-12">
+            <p><b>Mad Wave Challenge 2017</b> — это международные детские соревнования по плаванию,
+              <br> которые проходят в четыре этапа и объединены в общий турнир.
+              <br> С ноября 2016 года и по май 2017 на своих лучших спортивных объектах
+              <br> турнир примут Брест (Республика Беларусь), Санкт-Петербург,
+              <br> Руза (Московская обл.) и Казань.
+            </p>
+            <p>В сезоне 2016-17 к участию приглашаются спортсмены
+              <br> двух возрастных категорий: юноши/девушки 2003-04 г.р.
+              <br> и юноши/девушки 2005-07 г.р. Участники имеют право
+              <br> выступать на каждом этапе. Победитель общего личного зачета
+              <br> соревнований определится по сумме четырёх этапов
+              <br> в каждом стиле плавания.
+            </p>
+          </div>
+          <div class="about__image"></div>
+        </div>
+      </div>
+    </section>
+    <!-- gallery-->
+    <section class="gallery">
+      <div class="container popup-gallery">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="heading heading--white">Галерея</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+        </div>
+        <div class="row gallery__more">
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+          <div class="col-xs-6 col-sm-3"><a class="gallery__image" href="http://placehold.it/1200x800"><img class="img-fluid" src="images/gallery-img.png"></a></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 text-sm-center"><span class="btn-outline" id="morePhotos">Больше фотографий</span></div>
+        </div>
+      </div>
+    </section>
+    <!--partners-->
+    <section class="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="heading">Наши партнеры о соревнованиях</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 owl-carousel" id="owlPartners">
+            <div class="partners__block">
+              <div class="partners__image"><img class="img-fluid" src="images/partners-1.png"></div>
+              <div class="partners__name">Имя партнера</div>
+              <div class="partners__content">Целевая аудитория, отбрасывая подробности, спонтанно уравновешивает комплексный медиамикс. Потребительский рынок, вопреки мнению П.Друкера, синхронизирует комплексный стратегический рыночный план.</div>
+            </div>
+            <div class="partners__block">
+              <div class="partners__image"><img class="img-fluid" src="images/partners-1.png"></div>
+              <div class="partners__name">Имя партнера</div>
+              <div class="partners__content">Целевая аудитория, отбрасывая подробности, спонтанно уравновешивает комплексный медиамикс. Потребительский рынок, вопреки мнению П.Друкера, синхронизирует комплексный стратегический рыночный план.</div>
+            </div>
+            <div class="partners__block">
+              <div class="partners__image"><img class="img-fluid" src="images/partners-1.png"></div>
+              <div class="partners__name">Имя партнера</div>
+              <div class="partners__content">Целевая аудитория, отбрасывая подробности, спонтанно уравновешивает комплексный медиамикс. Потребительский рынок, вопреки мнению П.Друкера, синхронизирует комплексный стратегический рыночный план.</div>
+            </div>
+            <div class="partners__block">
+              <div class="partners__image"><img class="img-fluid" src="images/partners-1.png"></div>
+              <div class="partners__name">Имя партнера</div>
+              <div class="partners__content">Целевая аудитория, отбрасывая подробности, спонтанно уравновешивает комплексный медиамикс. Потребительский рынок, вопреки мнению П.Друкера, синхронизирует комплексный стратегический рыночный план.</div>
+            </div>
+            <div class="partners__block">
+              <div class="partners__image"><img class="img-fluid" src="images/partners-1.png"></div>
+              <div class="partners__name">Имя партнера</div>
+              <div class="partners__content">Целевая аудитория, отбрасывая подробности, спонтанно уравновешивает комплексный медиамикс. Потребительский рынок, вопреки мнению П.Друкера, синхронизирует комплексный стратегический рыночный план.</div>
+            </div>
+            <div class="partners__block">
+              <div class="partners__image"><img class="img-fluid" src="images/partners-1.png"></div>
+              <div class="partners__name">Имя партнера</div>
+              <div class="partners__content">Целевая аудитория, отбрасывая подробности, спонтанно уравновешивает комплексный медиамикс. Потребительский рынок, вопреки мнению П.Друкера, синхронизирует комплексный стратегический рыночный план.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--products-->
+    <section class="products">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="heading">Будь первым с Mad Wave!</div>
+            <div class="subheading subheading--light">Добивайся лучших результатов с экипировкой для профессионального плавания Mad Wave. <br> Стартовые очки, гидрокостюмы, джаммеры и шапочки Товары:</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 owl-carousel" id="owlProducts">
+            <!-- product-->
+            <div class="product">
+              <div class="product__image"><img class="img-responsive" src="images/product-img.png"></div>
+              <div class="product__name">cutlt</div>
+              <div class="product__desc">Мужские плавки антихлор</div>
+              <div class="product__stars"><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star ico-star--blank"></i><span>(4.8 ср. рейтинг)</span></div>
+              <div class="product__price">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="product__old">590 q</div>
+                    <div class="product__new">1.590 q</div>
+                  </div>
+                  <div class="col-sm-6"><a class="btn-buy" href="#"><i class="ico ico-buy"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- product-->
+            <div class="product">
+              <div class="product__image"><img class="img-responsive" src="images/product-img.png"></div>
+              <div class="product__name">cutlt</div>
+              <div class="product__desc">Мужские плавки антихлор</div>
+              <div class="product__stars"><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star ico-star--blank"></i><span>(4.8 ср. рейтинг)</span></div>
+              <div class="product__price">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="product__old">590 q</div>
+                    <div class="product__new">1.590 q</div>
+                  </div>
+                  <div class="col-sm-6"><a class="btn-buy" href="#"><i class="ico ico-buy"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- product-->
+            <div class="product">
+              <div class="product__image"><img class="img-responsive" src="images/product-img.png"></div>
+              <div class="product__name">cutlt</div>
+              <div class="product__desc">Мужские плавки антихлор</div>
+              <div class="product__stars"><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star ico-star--blank"></i><span>(4.8 ср. рейтинг)</span></div>
+              <div class="product__price">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="product__old">590 q</div>
+                    <div class="product__new">1.590 q</div>
+                  </div>
+                  <div class="col-sm-6"><a class="btn-buy" href="#"><i class="ico ico-buy"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- product-->
+            <div class="product">
+              <div class="product__image"><img class="img-responsive" src="images/product-img.png"></div>
+              <div class="product__name">cutlt</div>
+              <div class="product__desc">Мужские плавки антихлор</div>
+              <div class="product__stars"><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star ico-star--blank"></i><span>(4.8 ср. рейтинг)</span></div>
+              <div class="product__price">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="product__old">590 q</div>
+                    <div class="product__new">1.590 q</div>
+                  </div>
+                  <div class="col-sm-6"><a class="btn-buy" href="#"><i class="ico ico-buy"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- product-->
+            <div class="product">
+              <div class="product__image"><img class="img-responsive" src="images/product-img.png"></div>
+              <div class="product__name">cutlt</div>
+              <div class="product__desc">Мужские плавки антихлор</div>
+              <div class="product__stars"><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star ico-star--blank"></i><span>(4.8 ср. рейтинг)</span></div>
+              <div class="product__price">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="product__old">590 q</div>
+                    <div class="product__new">1.590 q</div>
+                  </div>
+                  <div class="col-sm-6"><a class="btn-buy" href="#"><i class="ico ico-buy"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- product-->
+            <div class="product">
+              <div class="product__image"><img class="img-responsive" src="images/product-img.png"></div>
+              <div class="product__name">cutlt</div>
+              <div class="product__desc">Мужские плавки антихлор</div>
+              <div class="product__stars"><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star ico-star--blank"></i><span>(4.8 ср. рейтинг)</span></div>
+              <div class="product__price">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="product__old">590 q</div>
+                    <div class="product__new">1.590 q</div>
+                  </div>
+                  <div class="col-sm-6"><a class="btn-buy" href="#"><i class="ico ico-buy"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- product-->
+            <div class="product">
+              <div class="product__image"><img class="img-responsive" src="images/product-img.png"></div>
+              <div class="product__name">cutlt</div>
+              <div class="product__desc">Мужские плавки антихлор</div>
+              <div class="product__stars"><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star ico-star--blank"></i><span>(4.8 ср. рейтинг)</span></div>
+              <div class="product__price">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="product__old">590 q</div>
+                    <div class="product__new">1.590 q</div>
+                  </div>
+                  <div class="col-sm-6"><a class="btn-buy" href="#"><i class="ico ico-buy"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- product-->
+            <div class="product">
+              <div class="product__image"><img class="img-responsive" src="images/product-img.png"></div>
+              <div class="product__name">cutlt</div>
+              <div class="product__desc">Мужские плавки антихлор</div>
+              <div class="product__stars"><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star ico-star--blank"></i><span>(4.8 ср. рейтинг)</span></div>
+              <div class="product__price">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="product__old">590 q</div>
+                    <div class="product__new">1.590 q</div>
+                  </div>
+                  <div class="col-sm-6"><a class="btn-buy" href="#"><i class="ico ico-buy"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--products-->
+    <section class="products products--second">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="heading">Сувенирная продукция</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 owl-carousel" id="owlSouvenier">
+            <!-- product-->
+            <div class="product">
+              <div class="product__image"><img class="img-responsive" src="images/product-img.png"></div>
+              <div class="product__name">cutlt</div>
+              <div class="product__desc">Мужские плавки антихлор</div>
+              <div class="product__stars"><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star ico-star--blank"></i><span>(4.8 ср. рейтинг)</span></div>
+              <div class="product__price">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="product__old">590 q</div>
+                    <div class="product__new">1.590 q</div>
+                  </div>
+                  <div class="col-sm-6"><a class="btn-buy" href="#"><i class="ico ico-buy"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- product-->
+            <div class="product">
+              <div class="product__image"><img class="img-responsive" src="images/product-img.png"></div>
+              <div class="product__name">cutlt</div>
+              <div class="product__desc">Мужские плавки антихлор</div>
+              <div class="product__stars"><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star ico-star--blank"></i><span>(4.8 ср. рейтинг)</span></div>
+              <div class="product__price">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="product__old">590 q</div>
+                    <div class="product__new">1.590 q</div>
+                  </div>
+                  <div class="col-sm-6"><a class="btn-buy" href="#"><i class="ico ico-buy"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- product-->
+            <div class="product">
+              <div class="product__image"><img class="img-responsive" src="images/product-img.png"></div>
+              <div class="product__name">cutlt</div>
+              <div class="product__desc">Мужские плавки антихлор</div>
+              <div class="product__stars"><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star ico-star--blank"></i><span>(4.8 ср. рейтинг)</span></div>
+              <div class="product__price">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="product__old">590 q</div>
+                    <div class="product__new">1.590 q</div>
+                  </div>
+                  <div class="col-sm-6"><a class="btn-buy" href="#"><i class="ico ico-buy"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- product-->
+            <div class="product">
+              <div class="product__image"><img class="img-responsive" src="images/product-img.png"></div>
+              <div class="product__name">cutlt</div>
+              <div class="product__desc">Мужские плавки антихлор</div>
+              <div class="product__stars"><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star ico-star--blank"></i><span>(4.8 ср. рейтинг)</span></div>
+              <div class="product__price">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="product__old">590 q</div>
+                    <div class="product__new">1.590 q</div>
+                  </div>
+                  <div class="col-sm-6"><a class="btn-buy" href="#"><i class="ico ico-buy"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- product-->
+            <div class="product">
+              <div class="product__image"><img class="img-responsive" src="images/product-img.png"></div>
+              <div class="product__name">cutlt</div>
+              <div class="product__desc">Мужские плавки антихлор</div>
+              <div class="product__stars"><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star ico-star--blank"></i><span>(4.8 ср. рейтинг)</span></div>
+              <div class="product__price">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="product__old">590 q</div>
+                    <div class="product__new">1.590 q</div>
+                  </div>
+                  <div class="col-sm-6"><a class="btn-buy" href="#"><i class="ico ico-buy"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- product-->
+            <div class="product">
+              <div class="product__image"><img class="img-responsive" src="images/product-img.png"></div>
+              <div class="product__name">cutlt</div>
+              <div class="product__desc">Мужские плавки антихлор</div>
+              <div class="product__stars"><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star ico-star--blank"></i><span>(4.8 ср. рейтинг)</span></div>
+              <div class="product__price">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="product__old">590 q</div>
+                    <div class="product__new">1.590 q</div>
+                  </div>
+                  <div class="col-sm-6"><a class="btn-buy" href="#"><i class="ico ico-buy"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- product-->
+            <div class="product">
+              <div class="product__image"><img class="img-responsive" src="images/product-img.png"></div>
+              <div class="product__name">cutlt</div>
+              <div class="product__desc">Мужские плавки антихлор</div>
+              <div class="product__stars"><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star ico-star--blank"></i><span>(4.8 ср. рейтинг)</span></div>
+              <div class="product__price">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="product__old">590 q</div>
+                    <div class="product__new">1.590 q</div>
+                  </div>
+                  <div class="col-sm-6"><a class="btn-buy" href="#"><i class="ico ico-buy"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- product-->
+            <div class="product">
+              <div class="product__image"><img class="img-responsive" src="images/product-img.png"></div>
+              <div class="product__name">cutlt</div>
+              <div class="product__desc">Мужские плавки антихлор</div>
+              <div class="product__stars"><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star ico-star--blank"></i><span>(4.8 ср. рейтинг)</span></div>
+              <div class="product__price">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="product__old">590 q</div>
+                    <div class="product__new">1.590 q</div>
+                  </div>
+                  <div class="col-sm-6"><a class="btn-buy" href="#"><i class="ico ico-buy"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--HERO-->
+    <section class="hero hero--bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-xs-center">
+            <div class="hero__uptitle">Стань участником</div>
+            <div class="hero__title">Mad Wave Challenge</div>
+            <div class="hero__desc">Ну я тоже не знаю что тут :)</div><a class="btn-cta" href="#">Стать участником</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--footer-->
+    <footer class="footer text-xs-center text-sm-left">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3"><a href="#"><i class="ico ico-logo"></i></a></div>
+          <div class="col-sm-7">
+            <div class="footer__copy">Все права зщищены Адрес: Санкт-Петербург, Индустриальный Проспект, 70</div>
+          </div>
+          <div class="col-sm-2 text-sm-right">
+            <div class="header__socials"><a href="#"><i class="ico ico-mail"></i></a><a href="#"><i class="ico ico-insta"></i></a><a href="#"><i class="ico ico-vk"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
