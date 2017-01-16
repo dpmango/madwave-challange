@@ -1,0 +1,54 @@
+// ICONS
+.ico
+  display: inline-block
+  font-style: normal
+  content: ' '
+
+// mixin
+@define-mixin myIcon $name
+  background: url('../images/$(name).svg') no-repeat center
+  width: 1em
+  height: 1em
+
+.ico-logo
+  background: url('../images/logo.png') no-repeat center
+  width: 154px
+  height: 49px
+  @media(width <= 656px)
+    width: 140px
+    background-size: contain
+
+.ico-challange
+  background: url('../images/challange-logo.png') no-repeat center
+  width: 146px
+  height: 187px
+  @media($desktop)
+    transform: scale(.75)
+
+.ico-star
+  background: url('../images/ico-star.png') no-repeat center
+  width: 18px
+  height: 16px
+  margin-right: 3px
+.ico-star--blank
+  filter: grayscale(1)
+
+.ico-buy
+  background: url('../images/ico-buy.png') no-repeat center
+  width: 21px
+  height: 21px
+
+.ico-mail
+  background: url('../images/interface.svg') no-repeat center
+  size: 1.2em
+  background-size: contain
+  margin-right: 10px
+.ico-insta
+  background: url('../images/social-media.svg') no-repeat center
+  size: 1.1em
+  background-size: contain
+  margin-right: 10px
+.ico-vk
+  background: url('../images/vk.svg') no-repeat center
+  size: 1.5em
+  background-size: contain

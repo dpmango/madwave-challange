@@ -1,0 +1,66 @@
+
+.btn-cta
+  display: inline-block
+  background: $colorRed
+  color: white
+  font-size: 12px
+  text-transform: uppercase
+  font-family: 'MullerBold'
+  padding: 20px 40px 17px 40px
+  border-radius: 4px
+  border: 2px solid transparent
+  transition: all .4s ease
+  &:hover
+    background: transparent
+    border-color: $colorRed
+    color: $colorRed
+
+.btn-outline
+  display: inline-block
+  background: transparent
+  color: white
+  font-size: 12px
+  text-transform: uppercase
+  font-family: 'MullerBold'
+  padding: 17px 40px 15px 40px
+  cursor: pointer
+  border-radius: 4px
+  border: 2px solid white
+  transition: all .4s ease
+  &:hover
+    background: white
+    border-color: white
+    color: $fontColor
+.heading
+  text-align: center
+  font-size: 44px
+  font-family: 'MullerBold'
+  @media($desktop)
+    font-size: 40px
+  @media($tablet)
+    font-size: 36px
+  @media($mobile)
+    font-size: 32px
+
+  &--small
+    font-size: 28px
+  &--white
+    color: white
+
+
+.subheading
+  text-align: center
+  color: #a5a5a5
+  font-size: 28px
+  font-family: 'MullerBold'
+  @media($tablet)
+    font-size: 24px
+  @media($mobile)
+    font-size: 20px
+
+  &--light
+    font-size: 20px
+    font-family: 'MullerRegular'
+    color: #484848
+    @media($mobile)
+      font-size: 18px

@@ -1,0 +1,744 @@
+doctype html
+html
+  head
+    // MADE WITH LOVE BY <> SERGEY KHMELEVSKOY </>
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    title Site name
+    //build:js js/main.min.js
+    script(src="/js/lib/jquery-3.1.1.min.js")
+    script(src="/js/lib/jquery.magnific-popup.min.js")
+    script(src="/js/lib/mask.js")
+    script(src="/js/lib/owl.carousel.min.js")
+    script(src="/js/lib/TweenMax.min.js")
+    script(src="/js/main.js")
+    //endbuild
+
+    //build:css css/style.min.css
+    link(rel="stylesheet" href="css/bootstrap.css" type="text/css")
+    link(rel="stylesheet" href="css/owl.carousel.min.css" type="text/css")
+    link(rel="stylesheet" href="css/hamb.css" type="text/css")
+    link(rel="stylesheet" href="css/style.css" type="text/css")
+    //endbuild
+
+    <!--[if lt IE 9]>
+        <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+    <![endif]-->
+
+
+  body
+    // HEADER
+    header.header
+      .container
+        .row.hidden-xs-down
+          .col-sm-3
+            a(href="#")
+              i.ico.ico-logo
+          .col-sm-7
+            ul.header__navi
+              li
+                a(href="#") Онлайн-Магазин
+              li
+                a(href="#") Сайт соревнований
+              li
+                a(href="#") Стать участником
+
+          .col-sm-2.text-sm-right
+            .header__socials
+              a(href="#")
+                i.ico.ico-mail
+              a(href="#")
+                i.ico.ico-insta
+              a(href="#")
+                i.ico.ico-vk
+        .row.hidden-sm-up
+          .col-xs-6
+            a(href="#")
+              i.ico.ico-logo
+          .col-xs-3.text-xs-center
+            .header__socials
+              a(href="#")
+                i.ico.ico-mail
+              a(href="#")
+                i.ico.ico-insta
+              a(href="#")
+                i.ico.ico-vk
+          .col-xs-3.text-xs-right
+            button.hamburger.hamburger--elastic(type='button')
+              span.hamburger-box
+                span.hamburger-inner
+
+        .row
+          .col-sm-12
+            .mobile-nav
+              ul.mobile-nav-list
+                li
+                  a(href="#") Онлайн-Магазин
+                li
+                  a(href="#") Сайт соревнований
+                li
+                  a(href="#") Стать участником
+
+
+    //HERO
+    section.hero
+      .container
+        .row
+          .col-sm-12.text-xs-center
+            i.ico.ico-challange
+            .hero__title Mad Wave Challenge
+            .hero__desc Международные всероссийские соревнования <br> и Турнир по плаванию для юниоров от 10 до 14 лет
+            a(href="#").btn-cta Стать участником
+
+    // EVENTS
+    section.events
+      .container
+        .row
+          .col-sm-12
+            .heading Турнир 2016-2017
+            .subheading Этапы
+
+        .row
+          .col-sm-3
+            .events__item.events__item--compleated
+              i.ico.events__item__status
+              .events__item__image
+                img(src="images/events-1.png")
+              .events__item__name Брест
+              .events__item__date 5-6 ноября 2016
+          .col-sm-3
+            .events__item
+              i.ico.events__item__status
+              .events__item__image
+                img(src="images/events-2.png")
+              .events__item__name Санкт-Петербург
+              .events__item__date 21-22 января 2017
+          .col-sm-3
+            .events__item
+              i.ico.events__item__status
+              .events__item__image
+                img(src="images/events-3.png")
+              .events__item__name Руза
+              .events__item__date 11-12 марта 2017
+          .col-sm-3
+            .events__item
+              i.ico.events__item__status
+              .events__item__image
+                img(src="images/events-4.png")
+              .events__item__name Казань
+              .events__item__date 7-9 мая 2017
+
+
+
+    //section
+    section.counter
+      .container
+        .row
+          .col-sm-12
+            .heading.heading--small До следующего этапа осталось:
+
+            .counter__nums
+              .bloc-time.days(data-init-value='46')
+                .figure.days.days-1
+                  span.top 5
+                  span.top-back
+                    span 4
+                  span.bottom 4
+                  span.bottom-back
+                    span 4
+                .figure.days.days-2
+                  span.top 6
+                  span.top-back
+                    span 6
+                  span.bottom 6
+                  span.bottom-back
+                    span 6
+                span.count-title Дней
+              .bloc-time.hours(data-init-value='0')
+                .figure.hours.hours-1
+                  span.top 2
+                  span.top-back
+                    span 2
+                  span.bottom 2
+                  span.bottom-back
+                    span 2
+                .figure.hours.hours-2
+                  span.top 4
+                  span.top-back
+                    span 4
+                  span.bottom 4
+                  span.bottom-back
+                    span 4
+                span.count-title Часов
+              .bloc-time.min(data-init-value='0')
+                .figure.min.min-1
+                  span.top 0
+                  span.top-back
+                    span 0
+                  span.bottom 0
+                  span.bottom-back
+                    span 0
+                .figure.min.min-2
+                  span.top 0
+                  span.top-back
+                    span 0
+                  span.bottom 0
+                  span.bottom-back
+                    span 0
+                span.count-title Минут
+              .bloc-time.sec(data-init-value='20')
+                .figure.sec.sec-1
+                  span.top 0
+                  span.top-back
+                    span 0
+                  span.bottom 0
+                  span.bottom-back
+                    span 0
+                .figure.sec.sec-2
+                  span.top 0
+                  span.top-back
+                    span 0
+                  span.bottom 0
+                  span.bottom-back
+                    span 0
+                span.count-title Секунд
+
+    // About
+    section.about
+      .container
+        .row
+          .heading О соревнованиях
+        .row
+          .col-sm-12.col-md-8.col-lg-12
+            p <b>Mad Wave Challenge 2017</b> — это международные детские соревнования по плаванию,
+              | <br> которые проходят в четыре этапа и объединены в общий турнир.
+              | <br> С ноября 2016 года и по май 2017 на своих лучших спортивных объектах
+              | <br> турнир примут Брест (Республика Беларусь), Санкт-Петербург,
+              | <br> Руза (Московская обл.) и Казань.
+
+            p В сезоне 2016-17 к участию приглашаются спортсмены
+              | <br> двух возрастных категорий: юноши/девушки 2003-04 г.р.
+              | <br> и юноши/девушки 2005-07 г.р. Участники имеют право
+              | <br> выступать на каждом этапе. Победитель общего личного зачета
+              | <br> соревнований определится по сумме четырёх этапов
+              | <br> в каждом стиле плавания.
+
+          .about__image
+
+    // gallery
+    section.gallery
+      .container.popup-gallery
+        .row
+          .col-sm-12
+            .heading.heading--white Галерея
+
+        .row
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+
+        .row.gallery__more
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+          .col-xs-6.col-sm-3
+            a(href="http://placehold.it/1200x800").gallery__image
+              img.img-fluid(src="images/gallery-img.png")
+
+
+        .row
+          .col-sm-12.text-sm-center
+            span.btn-outline#morePhotos Больше фотографий
+
+    //partners
+    section.partners
+      .container
+        .row
+          .col-sm-12
+            .heading Наши партнеры о соревнованиях
+
+        .row
+          .col-sm-12.owl-carousel#owlPartners
+            .partners__block
+              .partners__image
+                img.img-fluid(src="images/partners-1.png")
+              .partners__name Имя партнера
+              .partners__content Целевая аудитория, отбрасывая подробности, спонтанно уравновешивает комплексный медиамикс. Потребительский рынок, вопреки мнению П.Друкера, синхронизирует комплексный стратегический рыночный план.
+
+            .partners__block
+              .partners__image
+                img.img-fluid(src="images/partners-1.png")
+              .partners__name Имя партнера
+              .partners__content Целевая аудитория, отбрасывая подробности, спонтанно уравновешивает комплексный медиамикс. Потребительский рынок, вопреки мнению П.Друкера, синхронизирует комплексный стратегический рыночный план.
+            .partners__block
+              .partners__image
+                img.img-fluid(src="images/partners-1.png")
+              .partners__name Имя партнера
+              .partners__content Целевая аудитория, отбрасывая подробности, спонтанно уравновешивает комплексный медиамикс. Потребительский рынок, вопреки мнению П.Друкера, синхронизирует комплексный стратегический рыночный план.
+
+            .partners__block
+              .partners__image
+                img.img-fluid(src="images/partners-1.png")
+              .partners__name Имя партнера
+              .partners__content Целевая аудитория, отбрасывая подробности, спонтанно уравновешивает комплексный медиамикс. Потребительский рынок, вопреки мнению П.Друкера, синхронизирует комплексный стратегический рыночный план.
+
+            .partners__block
+              .partners__image
+                img.img-fluid(src="images/partners-1.png")
+              .partners__name Имя партнера
+              .partners__content Целевая аудитория, отбрасывая подробности, спонтанно уравновешивает комплексный медиамикс. Потребительский рынок, вопреки мнению П.Друкера, синхронизирует комплексный стратегический рыночный план.
+
+            .partners__block
+              .partners__image
+                img.img-fluid(src="images/partners-1.png")
+              .partners__name Имя партнера
+              .partners__content Целевая аудитория, отбрасывая подробности, спонтанно уравновешивает комплексный медиамикс. Потребительский рынок, вопреки мнению П.Друкера, синхронизирует комплексный стратегический рыночный план.
+
+    //products
+    section.products
+      .container
+        .row
+          .col-sm-12
+            .heading Будь первым с Mad Wave!
+            .subheading.subheading--light Добивайся лучших результатов с экипировкой для профессионального плавания Mad Wave. <br> Стартовые очки, гидрокостюмы, джаммеры и шапочки Товары:
+
+        .row
+          .col-sm-12.owl-carousel#owlProducts
+            // product
+            .product
+              .product__image
+                img.img-responsive(src="images/product-img.png")
+              .product__name cutlt
+              .product__desc Мужские плавки антихлор
+              .product__stars
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star.ico-star--blank
+                span (4.8 ср. рейтинг)
+              .product__price
+                .row
+                  .col-sm-6
+                    .product__old 590 q
+                    .product__new 1.590 q
+                  .col-sm-6
+                    a.btn-buy(href="#")
+                      i.ico.ico-buy
+            // product
+            .product
+              .product__image
+                img.img-responsive(src="images/product-img.png")
+              .product__name cutlt
+              .product__desc Мужские плавки антихлор
+              .product__stars
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star.ico-star--blank
+                span (4.8 ср. рейтинг)
+              .product__price
+                .row
+                  .col-sm-6
+                    .product__old 590 q
+                    .product__new 1.590 q
+                  .col-sm-6
+                    a.btn-buy(href="#")
+                      i.ico.ico-buy
+            // product
+            .product
+              .product__image
+                img.img-responsive(src="images/product-img.png")
+              .product__name cutlt
+              .product__desc Мужские плавки антихлор
+              .product__stars
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star.ico-star--blank
+                span (4.8 ср. рейтинг)
+              .product__price
+                .row
+                  .col-sm-6
+                    .product__old 590 q
+                    .product__new 1.590 q
+                  .col-sm-6
+                    a.btn-buy(href="#")
+                      i.ico.ico-buy
+            // product
+            .product
+              .product__image
+                img.img-responsive(src="images/product-img.png")
+              .product__name cutlt
+              .product__desc Мужские плавки антихлор
+              .product__stars
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star.ico-star--blank
+                span (4.8 ср. рейтинг)
+              .product__price
+                .row
+                  .col-sm-6
+                    .product__old 590 q
+                    .product__new 1.590 q
+                  .col-sm-6
+                    a.btn-buy(href="#")
+                      i.ico.ico-buy
+            // product
+            .product
+              .product__image
+                img.img-responsive(src="images/product-img.png")
+              .product__name cutlt
+              .product__desc Мужские плавки антихлор
+              .product__stars
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star.ico-star--blank
+                span (4.8 ср. рейтинг)
+              .product__price
+                .row
+                  .col-sm-6
+                    .product__old 590 q
+                    .product__new 1.590 q
+                  .col-sm-6
+                    a.btn-buy(href="#")
+                      i.ico.ico-buy
+            // product
+            .product
+              .product__image
+                img.img-responsive(src="images/product-img.png")
+              .product__name cutlt
+              .product__desc Мужские плавки антихлор
+              .product__stars
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star.ico-star--blank
+                span (4.8 ср. рейтинг)
+              .product__price
+                .row
+                  .col-sm-6
+                    .product__old 590 q
+                    .product__new 1.590 q
+                  .col-sm-6
+                    a.btn-buy(href="#")
+                      i.ico.ico-buy
+            // product
+            .product
+              .product__image
+                img.img-responsive(src="images/product-img.png")
+              .product__name cutlt
+              .product__desc Мужские плавки антихлор
+              .product__stars
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star.ico-star--blank
+                span (4.8 ср. рейтинг)
+              .product__price
+                .row
+                  .col-sm-6
+                    .product__old 590 q
+                    .product__new 1.590 q
+                  .col-sm-6
+                    a.btn-buy(href="#")
+                      i.ico.ico-buy
+            // product
+            .product
+              .product__image
+                img.img-responsive(src="images/product-img.png")
+              .product__name cutlt
+              .product__desc Мужские плавки антихлор
+              .product__stars
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star.ico-star--blank
+                span (4.8 ср. рейтинг)
+              .product__price
+                .row
+                  .col-sm-6
+                    .product__old 590 q
+                    .product__new 1.590 q
+                  .col-sm-6
+                    a.btn-buy(href="#")
+                      i.ico.ico-buy
+
+
+    //products
+    section.products.products--second
+      .container
+        .row
+          .col-sm-12
+            .heading Сувенирная продукция
+        .row
+          .col-sm-12.owl-carousel#owlSouvenier
+            // product
+            .product
+              .product__image
+                img.img-responsive(src="images/product-img.png")
+              .product__name cutlt
+              .product__desc Мужские плавки антихлор
+              .product__stars
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star.ico-star--blank
+                span (4.8 ср. рейтинг)
+              .product__price
+                .row
+                  .col-sm-6
+                    .product__old 590 q
+                    .product__new 1.590 q
+                  .col-sm-6
+                    a.btn-buy(href="#")
+                      i.ico.ico-buy
+            // product
+            .product
+              .product__image
+                img.img-responsive(src="images/product-img.png")
+              .product__name cutlt
+              .product__desc Мужские плавки антихлор
+              .product__stars
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star.ico-star--blank
+                span (4.8 ср. рейтинг)
+              .product__price
+                .row
+                  .col-sm-6
+                    .product__old 590 q
+                    .product__new 1.590 q
+                  .col-sm-6
+                    a.btn-buy(href="#")
+                      i.ico.ico-buy
+            // product
+            .product
+              .product__image
+                img.img-responsive(src="images/product-img.png")
+              .product__name cutlt
+              .product__desc Мужские плавки антихлор
+              .product__stars
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star.ico-star--blank
+                span (4.8 ср. рейтинг)
+              .product__price
+                .row
+                  .col-sm-6
+                    .product__old 590 q
+                    .product__new 1.590 q
+                  .col-sm-6
+                    a.btn-buy(href="#")
+                      i.ico.ico-buy
+            // product
+            .product
+              .product__image
+                img.img-responsive(src="images/product-img.png")
+              .product__name cutlt
+              .product__desc Мужские плавки антихлор
+              .product__stars
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star.ico-star--blank
+                span (4.8 ср. рейтинг)
+              .product__price
+                .row
+                  .col-sm-6
+                    .product__old 590 q
+                    .product__new 1.590 q
+                  .col-sm-6
+                    a.btn-buy(href="#")
+                      i.ico.ico-buy
+            // product
+            .product
+              .product__image
+                img.img-responsive(src="images/product-img.png")
+              .product__name cutlt
+              .product__desc Мужские плавки антихлор
+              .product__stars
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star.ico-star--blank
+                span (4.8 ср. рейтинг)
+              .product__price
+                .row
+                  .col-sm-6
+                    .product__old 590 q
+                    .product__new 1.590 q
+                  .col-sm-6
+                    a.btn-buy(href="#")
+                      i.ico.ico-buy
+            // product
+            .product
+              .product__image
+                img.img-responsive(src="images/product-img.png")
+              .product__name cutlt
+              .product__desc Мужские плавки антихлор
+              .product__stars
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star.ico-star--blank
+                span (4.8 ср. рейтинг)
+              .product__price
+                .row
+                  .col-sm-6
+                    .product__old 590 q
+                    .product__new 1.590 q
+                  .col-sm-6
+                    a.btn-buy(href="#")
+                      i.ico.ico-buy
+            // product
+            .product
+              .product__image
+                img.img-responsive(src="images/product-img.png")
+              .product__name cutlt
+              .product__desc Мужские плавки антихлор
+              .product__stars
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star.ico-star--blank
+                span (4.8 ср. рейтинг)
+              .product__price
+                .row
+                  .col-sm-6
+                    .product__old 590 q
+                    .product__new 1.590 q
+                  .col-sm-6
+                    a.btn-buy(href="#")
+                      i.ico.ico-buy
+            // product
+            .product
+              .product__image
+                img.img-responsive(src="images/product-img.png")
+              .product__name cutlt
+              .product__desc Мужские плавки антихлор
+              .product__stars
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star.ico-star--blank
+                span (4.8 ср. рейтинг)
+              .product__price
+                .row
+                  .col-sm-6
+                    .product__old 590 q
+                    .product__new 1.590 q
+                  .col-sm-6
+                    a.btn-buy(href="#")
+                      i.ico.ico-buy
+
+    //HERO
+    section.hero.hero--bottom
+      .container
+        .row
+          .col-sm-12.text-xs-center
+            .hero__uptitle Стань участником
+            .hero__title Mad Wave Challenge
+            .hero__desc Ну я тоже не знаю что тут :)
+            a(href="#").btn-cta Стать участником
+
+    //footer
+    footer.footer.text-xs-center.text-sm-left
+      .container
+        .row
+          .col-sm-3
+            a(href="#")
+              i.ico.ico-logo
+          .col-sm-7
+            .footer__copy Все права зщищены Адрес: Санкт-Петербург, Индустриальный Проспект, 70
+
+          .col-sm-2.text-sm-right
+            .header__socials
+              a(href="#")
+                i.ico.ico-mail
+              a(href="#")
+                i.ico.ico-insta
+              a(href="#")
+                i.ico.ico-vk

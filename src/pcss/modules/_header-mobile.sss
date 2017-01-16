@@ -1,0 +1,38 @@
+
+.hamburger
+  padding-bottom: 0
+
+.mobile-nav
+  display: none
+  color: color(white a(90%))
+  font-size: 1.1rem
+  background: white
+  .mobile-nav-list
+    list-style: none
+    margin: 0
+    padding: 20px 0 0px 0
+    color: $fontColor
+    border-top: 1px solid $grayColor
+    text-align: center
+    li
+      margin: 0
+      display: block
+      transition: all .4s ease
+      .ico
+        margin-right: .5em
+      a
+        display: block
+        border-bottom: 1px solid color(white a(10%))
+        padding: 0.6em 2em
+        transition: all .4s ease
+        &:hover
+          background: color(white a(10%))
+        &:active, &:focus
+          text-decoration: none
+          color: white
+      &.active a
+        border-left-color: $colorRed
+      &:hover:not(.active)
+        background: color(white a(10%))
+        a
+          border-color: color($fontColor a(50%))

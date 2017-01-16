@@ -1,0 +1,393 @@
+
+// HEADER
+
+.header
+  padding-top: 20px
+  padding-bottom: 20px
+  background: white
+  position: fixed
+  z-index: 10
+  top: 0
+  left: 0
+  width: 100%
+  transition: padding .4s ease
+  @media($mobile)
+    padding-top: 10px
+    padding-bottom: 5px
+  &.sticky
+    padding-top: 5px
+    padding-bottom: 5px
+    box-shadow: 0 2px 6px color(black a(30%))
+  &__navi
+    list-style: none
+    font-size: 13px
+    font-family: 'MullerBold'
+    text-transform: uppercase
+    margin-top: 21px
+    padding-left: 0
+    margin-bottom: 0
+    @media($wide)
+      text-align: center
+    @media(width <= 863px)
+      margin-top: 15px
+    @media(width <= 656px)
+      font-size: 12px
+    li
+      display: inline-block
+      &::after
+        display: inline-block
+        content: ' | '
+        margin-left: 15px
+        margin-right: 15px
+        color: $grayColor
+        @media($wide)
+          margin-left: 10px
+          margin-right: 10px
+      &:last-child
+        &::after
+          display: none
+  &__socials
+    margin-top: 20px
+    @media(width <= 455px)
+      display: none
+    .ico
+      vertical-align: middle
+      transition: all .4s ease
+      @media(width <=625px)
+        margin-right: 2px
+      @media($mobile)
+        margin-right: 10px
+      &:hover
+        opacity: .7
+
+
+.footer
+  background: #141414
+  padding-top: 15px
+  padding-bottom: 15px
+  color: white
+  .ico-logo
+    background-image: url('../images/logo-bw.png')
+  &__copy
+    margin-top: 20px
+    @media(width <= 930px)
+      margin-top: 15px
+  .header__socials
+    margin-top: 20px
+    .ico
+      filter: invert(1)
+      vertical-align: middle
+      transition: all .4s ease
+
+
+
+.hero
+  background: url('../images/hero-bg.png') no-repeat center
+  background-size: cover
+  height: 100vh
+  min-height: 600px
+  padding-top: 140px
+  color: white
+  @media($mobile)
+    height: auto
+    padding-top: 100px
+
+  &__uptitle
+    font-size: 30px
+    font-family: 'MullerBold'
+  &__title
+    font-size: 65px
+    margin-top: 20px
+    font-family: 'MullerBold'
+    line-height: 1
+    @media($desktop)
+      font-size: 50px
+    @media($mobile)
+      margin-top: 0
+      font-size: 42px
+
+  &__desc
+    font-size: 22px
+    margin-top: 3vh
+    @media($desktop)
+      font-size: 20px
+    @media($mobile)
+      font-size: 18px
+  .btn-cta
+    margin-top: 5vh
+    margin-bottom: 5vh
+
+  // bottom cta
+  &--bottom
+    height: 490px
+    min-height: 490px
+    padding-top: 90px
+    background-image: url('../images/hero-bottom-bg.png')
+    .hero__title
+      margin-top: 10px
+    @media($tablet)
+      min-height: 400px
+      height: 400px
+
+.events
+  margin-top: 100px
+  @media($desktop)
+    margin-top: 75px
+  @media($mobile)
+    margin-top: 50px
+  &__item
+    text-align: center
+    padding-top: 20px
+    margin-top: 20px
+    &__status
+      position: absolute
+      top: 20px
+      right: 40px
+      background: $colorYellow url('../images/ico-status-wait.png') no-repeat center
+      width: 30px
+      height: 30px
+      border-radius: 50%
+    &__image
+      min-height: 140px
+      img
+        max-width: 100%
+        display: inline-block
+    &__name
+      font-size: 28px
+      font-family: 'MullerBold'
+      @media($desktop)
+        font-size: 24px
+      @media($mobile)
+        font-size: 20px
+    &__date
+      font-size: 20px
+      color: #757575
+
+    &--compleated
+      .events__item__image
+        filter: grayscale(1)
+      .events__item__status
+        background: $colorGreen url('../images/ico-status-ok.png') no-repeat center
+      .events__item__name
+        color: #b7b7b7
+      .events__item__date
+        color: #b7b7b7
+
+.counter
+  margin-top: 100px
+  @media($desktop)
+    margin-top: 75px
+  @media($mobile)
+    margin-top: 50px
+  &__nums
+    margin-top: 20px
+    display: flex
+    justify-content: center
+
+
+.about
+  margin-top: 100px
+  padding-top: 80px
+  background: linear-gradient(to top, #cff1f3, #f1feff)
+  min-height: 750px
+  @media($desktop)
+    margin-top: 75px
+    min-height: auto
+  @media($mobile)
+    margin-top: 50px
+  .container
+    position: relative
+  .row
+    position: static
+  .col-lg-12
+    position: static
+    margin-top: 50px
+    @media($desktop)
+      padding-bottom: 30px
+  p
+    font-size: 20px
+    line-height: 2em
+    color: #484848
+    position: relative
+    z-index: 3
+    @media($desktop)
+      font-size: 18px
+      line-height: 1.7em
+    @media($mobile)
+      font-size: 17px
+      line-height: 1.6em
+
+  &__image
+    background: url('../images/about-img.png') no-repeat center
+    width: 718px
+    height: 748px
+    background-size: cover
+    position: absolute
+    top: -78px
+    right: -80px
+    z-index: 2
+    @media($desktop)
+      transform: scale(.75)
+      top: 17px
+
+
+    @media($tablet)
+      display: none
+
+.gallery
+  background: url('../images/gallery-bg.png') no-repeat center
+  background-size: cover
+  padding-top: 80px
+  padding-bottom: 120px
+  @media($desktop)
+    padding-top: 60px
+    padding-bottom: 90px
+  @media($mobile)
+    padding-top: 40px
+    padding-bottom: 80px
+  .heading
+    margin-bottom: 40px
+
+  &__more
+    display: none
+  &__image
+    position: relative
+    display: block
+    margin-bottom: 30px
+    overflow: hidden
+    img
+      width: 100%
+    &::after
+      opacity: 0
+      position: absolute 0 0 0 0
+      display: block
+      content: ' '
+      background: color(black a(50%)) url('../images/zoom.svg') no-repeat 90% 90%
+      background-size: 30px
+      transition: opacity .4s ease-in-out, background .6s ease
+    &:hover::after
+      opacity: 1
+
+.partners
+  margin-top: 100px
+  padding-bottom: 150px
+  position: relative
+  @media($desktop)
+    margin-top: 75px
+    padding-bottom: 100px
+  @media($mobile)
+    margin-top: 50px
+    padding-bottom: 60px
+  .owl-dots
+    bottom: -80px
+  &__block
+    margin-top: 80px
+    @media($desktop)
+      margin-top: 60px
+    @media($mobile)
+      margin-top: 40px
+
+  &__image
+    margin-bottom: 15px
+    img
+      width: auto !important
+      max-width: 100% !important
+  &__name
+    font-size: 22px
+    font-family: 'MullerBold'
+    margin-bottom: 10px
+    @media($tablet)
+      font-size: 20px
+    @media($mobile)
+      font-size: 18px
+
+  &__content
+    font-size: 16px
+    line-height: 30px
+    @media($tablet)
+      font-size: 14px
+      line-height: 1.3em
+
+.owl-dots
+  position: absolute
+  bottom: -40px
+  left: 50%
+  transform: translateX(-50%)
+  .owl-dot
+    display: inline-block
+    background: #e4e4e4
+    border-radius: 50%
+    width: 15px
+    height: 15px
+    margin-right: 20px
+    @media($tablet)
+      width: 12px
+      height: 12px
+      margin-right: 15px
+    @media($mobile)
+      margin-right: 10px
+    &.active
+      background: $colorRed
+
+.products
+  padding-top: 120px
+  padding-bottom: 50px
+  background: radial-gradient(#f0feff, #ceeff1)
+  @media($desktop)
+    padding-top: 90px
+  @media($mobile)
+    margin-top: 70px
+  &--second
+    margin-top: 0
+    padding-top: 50px
+    padding-bottom: 140px
+    @media($desktop)
+      padding-bottom: 100px
+    @media($mobile)
+      padding-bottom: 70px
+.product
+  background: white
+  padding: 20px 20px 30px 20px
+  margin-top: 20px
+  margin-bottom: 30px
+  &__image
+    margin-bottom: 15px
+    img
+      width: auto !important
+      max-width: 100% !important
+  &__name
+    font-size: 18px
+    text-transform: uppercase
+    font-family: 'MullerBold'
+    margin-top: 20px
+  &__desc
+    color: #999
+  &__stars
+    margin-top: 10px
+    span
+      font-size: 13px
+
+  &__price
+    margin-top: 10px
+  &__old
+    color: #8f8f8f
+    font-size: 18px
+    text-decoration: line-through
+    line-height: 1
+  &__new
+    font-size: 24px
+    line-height: 1
+    margin-top: 5px
+
+  .btn-buy
+    background: $colorRed
+    padding: 6px 30px
+    display: block
+    text-align: center
+    margin-top: 10px
+    transition: all .4s ease
+    &:hover
+      background: color($colorRed a(80%))
+
+.mfp-title
+  display: none
