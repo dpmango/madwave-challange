@@ -33,7 +33,7 @@ $(document).ready(function(){
       nav: false,
       dots: true,
       items: 1,
-      autoplay: true,
+      autoplay: false,
       margin: 30,
       responsive:{
         0:{
@@ -56,7 +56,7 @@ $(document).ready(function(){
       margin: 0,
       nav: false,
       dots: true,
-      autoplay: true,
+      autoplay: false,
       margin: 30,
       responsive:{
         0:{
@@ -79,7 +79,7 @@ $(document).ready(function(){
     margin: 0,
     nav: false,
     dots: true,
-    autoplay: true,
+    autoplay: false,
     margin: 30,
     responsive:{
       0:{
